@@ -1,0 +1,260 @@
+/**
+ * Import base style
+ */
+@import "base.less";
+ 
+/**
+ * Here comes specific style for a certain test program.
+ */
+
+#start
+{
+	margin:2em auto;
+	background-color:fadeout(@black,5%);
+	min-height:10em;
+	border-right:5px solid @blue;
+	border-left:5px solid @blue;
+	border-top:5px solid @red;
+	padding:1em;
+
+	height:500px;
+}
+p, .white
+{
+	color:white;
+}
+p .blue
+{
+	color:blue;
+}
+p .blue
+{
+	color:black;
+}
+
+input, select
+{
+	.border-radius(10px);
+	.box-shadow(2px 2px 2px 2px blue);
+	width:300px;
+}
+
+#form1
+{
+	padding-left:100px;
+}
+
+.heading
+{
+	float:right; font-size:700%; padding-right:50px; color:white;
+}
+
+#chats
+{
+margin:2em auto;background-color:fadeout(@greyLighter,5%);min-height:10em;border:1px solid @blue;padding:1em;
+.border-radius(10px);.box-shadow(); float:left;width:70%; background:black;
+}
+#users
+{
+	margin:2em auto;background-color:fadeout(@greyLighter,5%);
+	min-height:10em;
+	border:1px solid @red;
+	padding:1em;
+	.border-radius(10px);
+	.box-shadow();
+	float:right;
+	width:20%;
+	background:black;
+}
+
+#privatechats
+{
+	clear:both;
+	margin:2em auto;
+	background-color:fadeout(@black,5%);
+	border:1px solid @blue;
+	padding:1em;
+	.border-radius(10px);
+	.box-shadow();
+	width:900px;
+	background:black;
+}
+
+body{padding-left:10px;margin:8px auto;}
+
+footer
+{
+	float:bottom;
+}
+h1
+{
+	color:white;
+}
+
+#chatbox
+{
+	margin-left: 10px;
+}
+div.output
+{
+	width:90%;
+	height:300px;
+	background-color:#fff;
+	border:1px solid #F00;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	font-size:smaller;
+	
+} 
+
+.startChat
+{
+	cursor:pointer;
+	height:20px;
+}
+.startChat:hover
+{ 
+	background-color:blue;
+}
+
+/*----------- BOXES STYLE----------------------------------*/
+
+
+.wrapper
+{
+	width: 100%;
+}
+
+.box
+{
+	.clearfix();
+	.transition(all,0.2s);
+	float:left;
+	width: 650px;
+	height: 100px;
+	border: 2px solid blue;
+	position:relative;
+	margin:2px;
+}
+
+.box img.example
+{
+	float:right;
+	width: 100px;
+	height: 100px;
+}
+
+
+.hidden
+{
+	display:none;
+}
+
+.minimize
+{
+	width:50px;
+	height:50px;
+	text-align:center;
+	background:#333;
+	float:right;
+	border:2px solid #111;
+	.border-radius(10px);
+	margin-right:10px;
+	margin-right:10px;
+	cursor:pointer;
+}
+
+.max500
+{
+	max-height:500px;
+	max-width:500px;
+}
+.max300
+{
+	max-height:300px;
+	max-width:300px;
+}
+
+.small
+{
+	cursor:pointer;
+}
+
+/* privChat style------------------------------------------------- */
+
+.chatWrapper
+{
+	width: 900px;
+}
+.chatBox
+{
+	.clearfix();
+	.transition(all,0.2s);
+	float:left;
+	width: 200px;
+	height:300px;
+	border: 2px solid blue;
+	position:relative;
+	margin:2px;
+	
+	input, select
+	{
+		.border-radius(10px);
+		.box-shadow(2px 2px 2px 2px blue);
+		width:90%;
+	}
+	#chatbox
+	{
+		margin-left: 10px;
+	}
+	div.output
+	{
+		width:90%;
+		height:150px;
+		background-color:#fff;
+		border:1px solid #F00;
+		overflow-y:scroll;
+		overflow-x:hidden;
+		font-size:smaller;	
+	} 
+}
+
+
+
+.box img.example
+{
+	float:right;
+	width: 100px;
+	height: 100px;
+}
+
+
+
+.chatclose
+{
+	width:10px;
+	height:10px;
+	text-align:center;
+	float:right;
+	border:2px solid #111;
+	.border-radius(10px);
+	margin-right:10px;
+	margin-right:10px;
+	cursor:pointer;
+}
+
+.max500
+{
+	max-height:500px;
+	max-width:500px;
+}
+.max300
+{
+	max-height:300px;
+	max-width:300px;
+}
+
+.chat .small
+{
+	cursor:pointer;
+}
